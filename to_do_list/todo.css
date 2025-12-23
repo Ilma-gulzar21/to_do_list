@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #3ecad4;
+  }
+  .blue{
+    background-color: #3ecad4;
+
+  }
+  .pink{
+    background-color: #041d56;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    max-width: 500px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+  }
+  /* h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+  } */
+  #stats-container{
+    padding:20px;
+    border-radius: 10px;
+    border:2px solid white;
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    width:100%;
+  }
+#numbers {
+       width:140px;
+       height: 90px;
+       background-color:white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50%;
+       font-size: 20px;
+       font-weight: bold;
+       color:black;
+    }
+    form {
+        margin-top: 60px;
+        width:100%;
+        display: flex;
+        gap :10px;
+    }
+  .input-task {
+        flex: 1;
+        padding:10px;
+        justify-content:center ;
+        background-color:transparent;
+        border:2px solid white;
+        border-radius: 10px;
+        outline:none;
+        color: white;
+        height:5%;
+    }
+    .list_items{
+        padding:8px;
+        background-color:transparent;
+        border:2px solid white;
+        border-radius: 10px;
+        outline:none;
+        color: white;
+        margin:6px;
+        width:490px;
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+       justify-content: flex-start;
+       gap:8px;
+    }
+    .list_items .icon {
+      margin-left: auto;
+    }
+    .label {
+      display: flex;
+      align-items:self-start;
+    }
+    #progressbar {
+        width:100%;
+        height:10px;
+        border-radius: 5px;
+        background-color:grey;
+        margin-top: 20px;
+    }
+    #progress {
+        width:0%;
+        height: 10px;
+        background-color:white;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    .details {
+        width:100%;
+    }
+    .task-list{
+      position: relative;
+      left:-1%;
+      list-style-type: none;
+    }
+#newTask{
+  width:40px;
+      height:40px;
+      border-radius: 50%;
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+      justify-content: center;
+      background-color:transparent;
+      color: white;
+      border:2px solid white;
+      font-size: 30px;
+      font-weight: bold;
+}
+#newTask:hover{
+      background-color:  #2daab3;
+    }
+.fa-solid{
+  padding-left:10px;
+}
+#check {
+  margin-left:5px;
+  background-color: green;
+}
+.completed {
+  text-decoration: line-through;
+  text-decoration-thickness:2px;
+  color:green;
+  /* opacity: 0.6; */
+}
+.fa-moon{
+  position: absolute;
+  top:10%;
+  left:80%;
+  font-size: 1.5rem;
+  padding:5px 10px;
+  color:white;
+}
+@media(max-width:575px) {
+  #stats-container {
+    width:80%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+  }
+  #progress {
+    height:6px;
+    width:70%;
+  }
+  .fa-moon{
+      top:9%;
+  left:78%;
+  }
+  #progressbar {
+    margin-top: 15px;
+     height:6px;
+  }
+  #numbers{
+    height:50px;
+    width:90px;
+    font-size:15px;
+  }
+  .input-task {
+    height:-3%;
+    width:70vw;
+    margin:13px;
+  }
+  #newTask {
+    font-size: 20px;
+    height:30px;
+    width:30px;
+    position: relative;
+     top:18px;
+     right:10px;
+  }
+  form {
+    margin-top: 50px;
+  }
+      .list_items{
+        width:470px;
+        gap:5px;
+        padding:5px;
+        margin:3px;
+      }
+}
+@media(max-width:500px) {
+    .input-task {
+    height:-3%;
+    width:15%;
+    margin:10px;
+  }
+      form {
+        width:90%;
+      }
+       .list_items{
+        width:85vw;
+        justify-content: center;
+      }
+        .fa-moon{
+        top:9%;
+  left:78%;
+  }
+}
